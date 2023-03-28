@@ -23,6 +23,7 @@ public class User {
 
     private String name;
 
+    private Integer username;
     private Integer age;
 
     public String getName() {
