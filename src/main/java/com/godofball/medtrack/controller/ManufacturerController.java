@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/manufacturer")
 @RestController
-@Slf4j
+
 public class ManufacturerController {
 }
