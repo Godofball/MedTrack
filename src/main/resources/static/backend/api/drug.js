@@ -1,4 +1,4 @@
-function getMemberList (params) {
+function getDrugList (params) {
   return $axios({
     url: '/drug/page',
     method: 'get',
@@ -16,7 +16,7 @@ function enableOrDisableEmployee (params) {
 }
 
 // 新增---添加员工
-function addEmployee (params) {
+function addDrug (params) {
   return $axios({
     url: '/employee',
     method: 'post',
@@ -25,7 +25,7 @@ function addEmployee (params) {
 }
 
 // 修改---添加员工
-function editEmployee (params) {
+function editDrug (params) {
   return $axios({
     url: '/employee',
     method: 'put',
@@ -34,7 +34,7 @@ function editEmployee (params) {
 }
 
 // 修改页面反查详情接口
-function queryEmployeeById (id) {
+function queryDrugById (id) {
   return $axios({
     url: `/employee/${id}`,
     method: 'get'

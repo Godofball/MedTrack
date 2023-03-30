@@ -39,4 +39,10 @@ public class AdminController {
         admin.setPassword(null);
         return Result.success(admin);
     }
+
+    @PostMapping("/logout")
+    public Result<String> logout(HttpSession session){
+        session.removeAttribute("admin");
+        return Result.success("退出成功");
+    }
 }
